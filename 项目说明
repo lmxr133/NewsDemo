@@ -1,0 +1,5 @@
+数据：自己生成json数组
+显示：解析json在主页面显示，并点击实现跳转详情页
+
+具体步骤：1.在MainActivity中构造Json对象
+       2.在activity_main.xml文件中构造布局
