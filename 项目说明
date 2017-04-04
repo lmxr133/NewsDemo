@@ -1,5 +1,17 @@
 数据：自己生成json数组
 显示：解析json在主页面显示，并点击实现跳转详情页
 
-具体步骤：1.在MainActivity中构造Json对象
+具体步骤：
+	        第一阶段：完成数据解析，分条展示到主页面中
+	   1.在MainActivity中构造Json对象
        2.在activity_main.xml文件中构造布局
+       3.在MainActivity加载进来布局文件
+       4.解析JSon数据，并将其设置到实体对象上，然后放入一个集合中
+       5.将集合传入适配器中，也就是将数据填充到ListView即可，完成显示。
+	        第二阶段：完成点击每一条条目实现页面跳转，跳转到另一个Activity，展示内容详情
+	   1.定义新的展示详情页面的布局文件
+	   2.定义新的Activity加载进来详情布局文件
+	   3.通过intent完成主Activity到详情页Activity之间的跳转和数据传递
+
+注意：1.所有新加的Activity一定记得在AndroidManifest中注册
+    2.在Activity之间通过Intent通信时，不要忘记启动Activity
